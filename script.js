@@ -22,3 +22,10 @@ if(song.play()){
     }, 500)
 
 }
+progress.onchange = function(){
+    song.play();
+    song.currentTime = progress.value;
+    ctlIcon.classList.add("fa-pause");
+    ctlIcon.classList.remove("fa-play");
+
+}
