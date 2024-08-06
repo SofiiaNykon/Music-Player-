@@ -16,3 +16,9 @@ function playPause(){
         ctlIcon.classList.remove("fa-play");
     }
 }
+if(song.play()){
+    setTimeout(()=>{
+        progress.value = song.currentTime;
+    }, 500)
+
+}
