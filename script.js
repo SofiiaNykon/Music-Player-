@@ -9,7 +9,7 @@ function playPause(){
     if(ctlIcon.classList.contains("fa-pause")){
         song.pause();
         ctlIcon.classList.remove("fa-pause");
-        ctlIcon.classList.remove("fa-play");
+        ctlIcon.classList.add("fa-play");
     }else{
         song.play();
         ctlIcon.classList.add("fa-pause");
